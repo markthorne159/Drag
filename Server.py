@@ -1,10 +1,11 @@
 from flask import Flask
+import os
 
 ServerApp = Flask(__name__)
+port = int(os.environ["PORT"])
 
 @ServerApp.route('/')
 def Hello():
     return "Hello world!"
 
-if __name__ == '__main__':
-    ServerApp.run()
+ServerApp.run(port=port,host="0.0.0.0")
