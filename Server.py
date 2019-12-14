@@ -4,7 +4,7 @@ import os
 ServerApp = Flask(__name__)
 port = int(os.environ["PORT"])
 
-@ServerApp.route('/')
+@ServerApp.route('/',methods=['POST'])
 def Hello():
     return "Hello world!"
 
