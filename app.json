@@ -1,0 +1,14 @@
+{
+"name": "LightServer",
+"description": "Server code for lights communication.",
+"repository": "https://github.com/Animark/LightServer",
+"keywords": ["python","light","server"],
+"addons": ["heroku-postgresql"],
+"environments": {
+"test": {
+"scripts": {
+"test": "Server.py test"
+}
+}
+}
+}
