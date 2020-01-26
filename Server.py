@@ -6,6 +6,7 @@ port = int(os.environ["PORT"])
 
 @ServerApp.route('/',methods=['GET'])
 def Hello():
+    print "Homepage loaded!"
     return render_template("index.html")
 
 ServerApp.run(port=port,host="0.0.0.0")
