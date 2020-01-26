@@ -1,25 +1,25 @@
 <html>
 <body>
 
-<script>function Add(){
-console.log("Testing");
-Number = document.getElementById("Number").innerHTML;
-console.log(Number);
-Number ++;
-console.log(Number);
-document.getElementById("Number").innerHTML = Number;
+<style>
+body {background-color: powderblue;}
 
-}</script>
+</style>
 
-<h1>Sessions Test</h1>
+<h1>Homepage</h1>
 
-<p id = "Number">0<p>
-<button type = "button" onclick="Add()">Click here</button>
+<p>Test</p>
 
+<button type = "button" id = "Start">How can I help?</button>
 
+<script>
+Width = screen.width;
+Width = Width/2;
+console.log(Width);
 
+document.getElementById("Start").style.marginLeft = Width;
 
-
+</script>
 
 </body>
 </html>
